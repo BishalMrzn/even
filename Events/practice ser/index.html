@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="a">Button 1</button>
+    <button id="b">Button 2</button>
+    <button id="c">Button 3</button>
+  </body>
+  <script>
+    let x = function (e) {
+      alert("Button a clicked");
+    };
+    let y = function (e) {
+      alert("Button b clicked");
+    };
+    let z = function (e) {
+      alert("Button c clicked");
+    };
+    a.addEventListener("click", x);
+    b.addEventListener("click", y);
+    c.addEventListener("click", z);
+  </script>
+</html>

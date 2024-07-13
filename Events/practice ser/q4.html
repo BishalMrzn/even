@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .bulbcontainer {
+      background-color: blue;
+    }
+    #bulb {
+      height: 300px;
+      width: 300px;
+    }
+  </style>
+  <body>
+    <div id="bulb" class="bulb"></div>
+  </body>
+  <script>
+    setInterval(function () {
+      document.querySelector("#bulb").classList.toggle("bulbcontainer");
+    }, 700);
+  </script>
+</html>
